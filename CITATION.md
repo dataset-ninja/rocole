@@ -1,12 +1,7 @@
-If you make use of the Sweet Pepper data, please cite the following reference (to be prepared after the challenge workshop) in any publications:
+If you make use of the RoCoLe data, please cite the following reference:
 
-``` bibtex
-@misc{kaggle,
-  author={Luis Enrique Montoya},
-  title={Sweet Pepper and Peduncle Segmentation},
-  year={2022},
-  url={https://www.kaggle.com/datasets/lemontyc/sweet-pepper},
-}
+``` APA
+Parraga-Alava, Jorge; Cusme, Kevin; Loor, Angélica; Santander, Esneider (2019), “RoCoLe: A robusta coffee leaf images dataset ”, Mendeley Data, V2, doi: 10.17632/c5yvn32dzg.2
 ```
 
-[🔗 Source](https://www.kaggle.com/datasets/lemontyc/sweet-pepper).
+[🔗 Source](https://data.mendeley.com/datasets/c5yvn32dzg/2).

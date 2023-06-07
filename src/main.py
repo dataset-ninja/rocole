@@ -43,29 +43,35 @@ dtools.update_sly_url_dict({project_id: download_sly_url})
 # preset fields
 custom_data = {
     # required fields
-    "name": "Sweet Pepper",
-    "fullname": "Sweet Pepper and Peduncle Segmentation",
+    "name": "RoCoLe",
+    "fullname": "A robusta coffee leaf images dataset",
     "cv_tasks": [
         "semantic segmentation",
         "object detection",
-        "instance segmentation",
+        # "instance segmentation",
     ],
-    "annotation_types": ["instance segmentation"],
+    "annotation_types": ["semantic segmentation"],
     "industries": ["agriculture"],
-    "release_year": 2022,
-    "homepage_url": "https://www.kaggle.com/datasets/lemontyc/sweet-pepper?resource=download",
-    "license": "Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
-    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-    "preview_image_id": 220267,
-    "github": "dataset-ninja/sweet-pepper",
-    "github_url": "https://github.com/dataset-ninja/sweet-pepper",
+    "release_year": 2019,
+    "homepage_url": "https://data.mendeley.com/datasets/c5yvn32dzg/2",
+    "license": "Attribution 4.0 International (CC BY 4.0)",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "preview_image_id": 240375,
+    "github": "dataset-ninja/rocole",
+    "github_url": "https://github.com/dataset-ninja/rocole",
     "download_sly_url": download_sly_url,
     # optional fields
-    "download_original_url": "https://www.kaggle.com/datasets/lemontyc/sweet-pepper?resource=download",
-    # "paper": "https://ieeexplore.ieee.org/document/8954630",
-    # "citation_url": "https://github.com/laboroai/LaboroTomato#readme",
-    # "organization_name": "Laboro.AI Inc.",
-    # "organization_url": "https://laboro.ai/",
+    "download_original_url": "https://prod-dcd-datasets-cache-zipfiles.s3.eu-west-1.amazonaws.com/c5yvn32dzg-2.zip",
+    "paper": "https://ieeexplore.ieee.org/document/8954630",
+    "citation_url": "https://data.mendeley.com/datasets/c5yvn32dzg/2",
+    "organization_name": [
+        "Escuela Superior Politecnica Agropecuaria de Manabi",
+        "Universidad de Santiago de Chile",
+    ],
+    "organization_url": [
+        "http://www.espam.edu.ec/",
+        "https://www.usach.cl/",
+    ],
     # "tags": [],
 }
 api.project.update_custom_data(project_id, custom_data)

@@ -8,7 +8,7 @@ if sly.is_development():
     load_dotenv(os.path.expanduser("~/ninja.env"))
     load_dotenv("local.env")
 
-from dataset_tools.convert.sweetpepper.main import to_supervisely
+from dataset_tools.convert.rocole.main import to_supervisely
 
 api = sly.Api.from_env()
 workspace_id = sly.env.workspace_id()

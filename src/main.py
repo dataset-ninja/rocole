@@ -79,7 +79,7 @@ api.project.update_custom_data(project_id, custom_data)
 
 def build_stats():
     stats = [
-        dtools.ClassBalance(project_meta),
+        dtools.ClassBalance(project_meta, force=False),
         dtools.ClassCooccurrence(project_meta, force=False),
         dtools.ClassesPerImage(project_meta, datasets),
         dtools.ObjectsDistribution(project_meta),

@@ -17,6 +17,11 @@ team_id = sly.env.team_id()
 workspace_id = sly.env.workspace_id()
 
 
+PROJECT_NAME = "RoCoLe"
+PROJECT_NAME_FULL = "A robusta coffee leaf images dataset"
+DOWNLOAD_ORIGINAL_URL = (
+    "https://prod-dcd-datasets-cache-zipfiles.s3.eu-west-1.amazonaws.com/c5yvn32dzg-2.zip"
+)
 # 1a initialize sly api way
 project_id = sly.env.project_id()
 project_meta = sly.ProjectMeta.from_json(api.project.get_meta(project_id))
@@ -35,7 +40,15 @@ custom_data = project_info.custom_data
 
 # 2. get download link
 download_sly_url = dtools.prepare_download_link(project_info)
-dtools.update_sly_url_dict({project_id: download_sly_url})
+dtools.update_sly_url_dict(
+    {
+        PROJECT_NAME: {
+            "id": project_id,
+            "download_sly_url": download_sly_url,
+            "download_original_url": DOWNLOAD_ORIGINAL_URL,
+        }
+    }
+)
 
 
 # 3. upload custom data
@@ -44,7 +57,7 @@ dtools.update_sly_url_dict({project_id: download_sly_url})
 custom_data = {
     # required fields
     "name": "RoCoLe",
-    "fullname": "A robusta coffee leaf images dataset",
+    "fullname": PROJECT_NAME_FULL,
     "cv_tasks": [
         "semantic segmentation",
         "object detection",
@@ -61,7 +74,7 @@ custom_data = {
     "github_url": "https://github.com/dataset-ninja/rocole",
     "download_sly_url": download_sly_url,
     # optional fields
-    "download_original_url": "https://prod-dcd-datasets-cache-zipfiles.s3.eu-west-1.amazonaws.com/c5yvn32dzg-2.zip",
+    "download_original_url": DOWNLOAD_ORIGINAL_URL,
     "paper": "https://ieeexplore.ieee.org/document/8954630",
     "citation_url": "https://data.mendeley.com/datasets/c5yvn32dzg/2",
     "organization_name": [

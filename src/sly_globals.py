@@ -52,7 +52,8 @@ tag_meta_collection = sly.TagMetaCollection(tag_metas)
 
 meta = sly.ProjectMeta(obj_classes=obj_class_collection, tag_metas=tag_meta_collection)
 
-storage_dir = sly.app.get_data_dir()
+# storage_dir = sly.app.get_data_dir()
+storage_dir = "./APP_DATA"
 work_dir_path = os.path.join(storage_dir, work_dir)
 sly.io.fs.mkdir(work_dir_path)
 archive_path = os.path.join(work_dir_path, arch_name)

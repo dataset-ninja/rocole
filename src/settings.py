@@ -16,9 +16,8 @@ INDUSTRIES: List[Industry] = [Industry.Agriculture()]
 CV_TASKS: List[CVTask] = [
     CVTask.SemanticSegmentation(),
     CVTask.ObjectDetection(),
-    CVTask.InstanceSegmentation(),
 ]
-ANNOTATION_TYPES: List[AnnotationType] = [AnnotationType.InstanceSegmentation()]
+ANNOTATION_TYPES: List[AnnotationType] = [AnnotationType.SemanticSegmentation()]
 
 RELEASE_YEAR: int = 2019
 HOMEPAGE_URL: str = "https://data.mendeley.com/datasets/c5yvn32dzg/2"

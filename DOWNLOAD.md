@@ -13,4 +13,4 @@ import dataset_tools as dtools
 
 dtools.download(dataset='RoCoLe', dst_path='~/dtools/datasets/RoCoLe.tar')
 ```
-The data in original format can be 🔗[downloaded here](https://prod-dcd-datasets-cache-zipfiles.s3.eu-west-1.amazonaws.com/c5yvn32dzg-2.zip)
+The data in original format can be 🔗[downloaded here.](https://prod-dcd-datasets-cache-zipfiles.s3.eu-west-1.amazonaws.com/c5yvn32dzg-2.zip)

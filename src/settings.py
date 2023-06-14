@@ -43,7 +43,7 @@ CLASS2COLOR: Optional[Dict[str, List[str]]] = None
 PAPER: Optional[str] = "https://ieeexplore.ieee.org/document/8954630"
 CITATION_URL: Optional[str] = "https://data.mendeley.com/datasets/c5yvn32dzg/2"
 ORGANIZATION_NAME: Optional[Union[str, List[str]]] = [
-    "Escuela Superior Politecnica Agropecuaria de Manabi",
+    "Escuela Superior Politecnica Agropecuaria de Manabi, Equador",
     "Universidad de Santiago de Chile",
 ]
 ORGANIZATION_URL: Optional[Union[str, List[str]]] = [

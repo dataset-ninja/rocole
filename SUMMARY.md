@@ -1,4 +1,4 @@
-**A robusta coffee leaf images dataset** is a dataset for semantic segmentation and object detection tasks. It is used in the agriculture industry.
+**RoCoLe: A Robusta Coffee Leaf Images Dataset** is a dataset for semantic segmentation and object detection tasks. It is used in the agriculture industry.
 
 The dataset consists of 1560 images with 1560 labeled objects belonging to 1 single class (*coffee_leaf*).
 

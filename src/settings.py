@@ -6,7 +6,7 @@ from dataset_tools.templates import AnnotationType, CVTask, Industry, License
 # * Before uploading to instance #
 ##################################
 PROJECT_NAME: str = "RoCoLe"
-PROJECT_NAME_FULL: str = "A robusta coffee leaf images dataset"
+PROJECT_NAME_FULL: str = "RoCoLe: A Robusta Coffee Leaf Images Dataset"
 
 ##################################
 # * After uploading to instance ##

@@ -30,12 +30,11 @@ def create_ann(im_name):
     labels = []
     img_name = get_file_name(im_name)
     img_shape = g.image_name_to_shape[img_name]
-    classification = g.image_name_to_classification[img_name]
+
     polygon_data = g.image_name_to_polygon[img_name]
 
     state = polygon_data["state"]
-    tag_state = sly.Tag(g.tag_meta_state, value=state)
-    tag_classification = sly.Tag(g.tag_meta_classification, value=classification)
+    classification = g.image_name_to_classification[img_name]
 
     geomerty = polygon_data["geometry"]
 
@@ -45,8 +44,14 @@ def create_ann(im_name):
 
     polygon = sly.Polygon(points, interior=[])
 
-    label = sly.Label(polygon, g.obj_class, tags=sly.TagCollection([tag_state, tag_classification]))
+    obj_class_state = g.cls_to_obj_classes[state]
+    label = sly.Label(polygon, obj_class_state)
     labels.append(label)
+
+    if classification != "healthy":
+        obj_class_classification = g.cls_to_obj_classes[classification]
+        label = sly.Label(polygon, obj_class_classification)
+        labels.append(label)
 
     return sly.Annotation(img_size=img_shape, labels=labels)
 

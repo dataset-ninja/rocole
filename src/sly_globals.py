@@ -17,7 +17,7 @@ sys.path.append(root_source_dir)
 
 logger = sly.logger
 
-project_name = "Robusta coffee leaves"
+# project_name = "Robusta coffee leaves"
 dataset_name = "ds"
 work_dir = "coffee_leaves"
 coffee_leaves_url = (
@@ -40,17 +40,32 @@ class_name = "coffee_leaf"
 batch_size = 30
 
 obj_class = sly.ObjClass(class_name, sly.Polygon)
-obj_class_collection = sly.ObjClassCollection([obj_class])
+# obj_class_collection = sly.ObjClassCollection([obj_class])
 
-tag_name_classification = "classification"
-tag_meta_classification = sly.TagMeta(tag_name_classification, sly.TagValueType.ANY_STRING)
-tag_name_state = "state"
-tag_meta_state = sly.TagMeta(tag_name_state, sly.TagValueType.ANY_STRING)
-tag_metas = [tag_meta_classification, tag_meta_state]
+class_names = (
+    "healthy",
+    "unhealthy",
+    "rust_level_1",
+    "rust_level_2",
+    "rust_level_3",
+    "rust_level_4",
+    "red_spider_mite",
+)
 
-tag_meta_collection = sly.TagMetaCollection(tag_metas)
+obj_classes = [sly.ObjClass(class_name, sly.Polygon) for class_name in class_names]
 
-meta = sly.ProjectMeta(obj_classes=obj_class_collection, tag_metas=tag_meta_collection)
+cls_to_obj_classes = {cls_name: obj_class for cls_name, obj_class in zip(class_names, obj_classes)}
+
+
+# tag_name_classification = "classification"
+# tag_meta_classification = sly.TagMeta(tag_name_classification, sly.TagValueType.ANY_STRING)
+# tag_name_state = "state"
+# tag_meta_state = sly.TagMeta(tag_name_state, sly.TagValueType.ANY_STRING)
+# tag_metas = [tag_meta_classification, tag_meta_state]
+
+# tag_meta_collection = sly.TagMetaCollection(tag_metas)
+
+meta = sly.ProjectMeta(obj_classes=obj_classes)
 
 # storage_dir = sly.app.get_data_dir()
 storage_dir = "./APP_DATA"

@@ -1,6 +1,6 @@
 from typing import Dict, List, Optional, Union
 
-from dataset_tools.templates import AnnotationType, CVTask, Industry, License
+from dataset_tools.templates import AnnotationType, CVTask, Industry, License, Research
 
 ##################################
 # * Before uploading to instance #
@@ -12,7 +12,7 @@ PROJECT_NAME_FULL: str = "RoCoLe: A Robusta Coffee Leaf Images Dataset"
 # * After uploading to instance ##
 ##################################
 LICENSE: License = License.CC_BY_4_0()
-INDUSTRIES: List[Industry] = [Industry.Agriculture()]
+APPLICATIONS: List[Industry] = [Industry.Agriculture(), Research.Biological()]
 CV_TASKS: List[CVTask] = [
     CVTask.SemanticSegmentation(),
     CVTask.ObjectDetection(),
@@ -23,7 +23,7 @@ RELEASE_YEAR: int = 2019
 HOMEPAGE_URL: str = "https://data.mendeley.com/datasets/c5yvn32dzg/2"
 # e.g. "https://some.com/dataset/homepage"
 
-PREVIEW_IMAGE_ID: int = 240375
+PREVIEW_IMAGE_ID: int = 1635253
 # This should be filled AFTER uploading images to instance, just ID of any image.
 
 GITHUB_URL: str = "https://github.com/dataset-ninja/rocole"
@@ -37,10 +37,18 @@ DOWNLOAD_ORIGINAL_URL: Optional[
 ] = "https://prod-dcd-datasets-cache-zipfiles.s3.eu-west-1.amazonaws.com/c5yvn32dzg-2.zip"
 # Optional link for downloading original dataset (e.g. "https://some.com/dataset/download")
 
-CLASS2COLOR: Optional[Dict[str, List[str]]] = None
+CLASS2COLOR: Optional[Dict[str, List[str]]] = {
+    "healthy": [0, 128, 128],
+    "unhealthy": [230, 25, 75],
+    "rust_level_1": [255, 250, 200],
+    "rust_level_2": [255, 215, 180],
+    "rust_level_3": [250, 190, 212],
+    "rust_level_4": [170, 110, 40],
+    "red_spider_mite": [128, 0, 0],
+}
 # If specific colors for classes are needed, fill this dict (e.g. {"class1": [255, 0, 0], "class2": [0, 255, 0]})
 
-PAPER: Optional[str] = "https://ieeexplore.ieee.org/document/8954630"
+PAPER: Optional[str] = "https://www.sciencedirect.com/science/article/pii/S2352340919307693"
 CITATION_URL: Optional[str] = "https://data.mendeley.com/datasets/c5yvn32dzg/2"
 ORGANIZATION_NAME: Optional[Union[str, List[str]]] = [
     "Escuela Superior Politecnica Agropecuaria de Manabi, Equador",
@@ -68,7 +76,7 @@ def get_settings():
         "project_name": PROJECT_NAME,
         "project_name_full": PROJECT_NAME_FULL,
         "license": LICENSE,
-        "industries": INDUSTRIES,
+        "applications": APPLICATIONS,
         "cv_tasks": CV_TASKS,
         "annotation_types": ANNOTATION_TYPES,
         "release_year": RELEASE_YEAR,

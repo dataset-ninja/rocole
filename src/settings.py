@@ -26,10 +26,7 @@ APPLICATIONS: List[Union[Industry, Domain, Research]] = [
 ]
 CATEGORY: Category = Category.Agriculture()
 
-CV_TASKS: List[CVTask] = [
-    CVTask.SemanticSegmentation(),
-    CVTask.ObjectDetection(),
-]
+CV_TASKS: List[CVTask] = [CVTask.SemanticSegmentation()]
 ANNOTATION_TYPES: List[AnnotationType] = [AnnotationType.SemanticSegmentation()]
 
 RELEASE_DATE: Optional[str] = "2019-05-17"  # e.g. "YYYY-MM-DD"

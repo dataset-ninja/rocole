@@ -1,3 +1,3 @@
-# A robusta coffee leaf images dataset
+# RoCoLe: A Robusta Coffee Leaf Images Dataset
 
-RoCoLe is a dataset for semantic segmentation, object detection, instance segmentation tasks.
+RoCoLe is a dataset for semantic segmentation tasks.

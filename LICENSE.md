@@ -1,1 +1,1 @@
-A robusta coffee leaf images dataset is under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/legalcode) license.
+RoCoLe: A Robusta Coffee Leaf Images Dataset is under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/legalcode) license.

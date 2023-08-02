@@ -54,13 +54,13 @@ DOWNLOAD_ORIGINAL_URL: Optional[
 # Optional link for downloading original dataset (e.g. "https://some.com/dataset/download")
 
 CLASS2COLOR: Optional[Dict[str, List[str]]] = {
-    "healthy": [0, 128, 128],
-    "unhealthy": [230, 25, 75],
-    "rust_level_1": [255, 250, 200],
-    "rust_level_2": [255, 215, 180],
-    "rust_level_3": [250, 190, 212],
-    "rust_level_4": [170, 110, 40],
-    "red_spider_mite": [128, 0, 0],
+    "healthy": [127, 255, 212],
+    "unhealthy": [255, 0, 255],
+    "rust_level_1": [255, 255, 0],
+    "rust_level_2": [128, 0, 0],
+    "rust_level_3": [128, 128, 0],
+    "rust_level_4": [75, 0, 130],
+    "red_spider_mite": [255, 0, 0],
 }
 # If specific colors for classes are needed, fill this dict (e.g. {"class1": [255, 0, 0], "class2": [0, 255, 0]})
 

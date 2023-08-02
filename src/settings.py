@@ -51,7 +51,7 @@ DOWNLOAD_ORIGINAL_URL: Optional[
 # Optional link for downloading original dataset (e.g. "https://some.com/dataset/download")
 
 CLASS2COLOR: Optional[Dict[str, List[str]]] = {
-    "healthy": [127, 255, 212],
+    "healthy": [0, 0, 255],
     "unhealthy": [255, 0, 255],
     "rust_level_1": [255, 255, 0],
     "rust_level_2": [128, 0, 0],

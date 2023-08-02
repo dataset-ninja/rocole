@@ -6,4 +6,4 @@ Images in the RoCoLe dataset have pixel-level semantic segmentation annotations.
 
 Here is the visualized example grid with annotations:
 
-<img src="https://github.com/dataset-ninja/rocole/raw/main/visualizations/side_annotations_grid.png">
+<img src="https://github.com/dataset-ninja/rocole/raw/main/visualizations/horizontal_grid.png">

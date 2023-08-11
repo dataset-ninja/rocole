@@ -4,6 +4,6 @@ The dataset consists of 1560 images with 2329 labeled objects belonging to 7 dif
 
 Images in the RoCoLe dataset have pixel-level semantic segmentation annotations. All images are labeled (i.e. with annotations). There are no pre-defined <i>train/val/test</i> splits in the dataset. The dataset was released in 2019 by the Escuela Superior Politecnica Agropecuaria de Manabi, Equador and Universidad de Santiago de Chile.
 
-Here is the visualized example grid with annotations:
+Here is the visualized example grid with animated annotations:
 
-[horizontal_grid](https://github.com/dataset-ninja/rocole/raw/main/visualizations/horizontal_grid.webm)
+[animated grid](https://github.com/dataset-ninja/rocole/raw/main/visualizations/horizontal_grid.webm)

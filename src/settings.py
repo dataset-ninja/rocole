@@ -70,6 +70,7 @@ AUTHORS: Optional[List[str]] = [
     "Angélica Loor",
     "Esneider Santander",
 ]
+AUTHORS_CONTACTS: Optional[List[str]] = ["jorge.parraga@usach.cl"]
 
 ORGANIZATION_NAME: Optional[Union[str, List[str]]] = [
     "Escuela Superior Politecnica Agropecuaria de Manabi, Equador",
@@ -122,6 +123,7 @@ def get_settings():
     settings["paper"] = PAPER
     settings["citation_url"] = CITATION_URL
     settings["authors"] = AUTHORS
+    settings["authors_contacts"] = AUTHORS_CONTACTS
     settings["organization_name"] = ORGANIZATION_NAME
     settings["organization_url"] = ORGANIZATION_URL
     settings["slytagsplit"] = SLYTAGSPLIT

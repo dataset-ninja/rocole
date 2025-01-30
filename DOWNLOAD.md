@@ -1,6 +1,6 @@
 Dataset **RoCoLe** can be downloaded in [Supervisely format](https://developer.supervisely.com/api-references/supervisely-annotation-json-format):
 
- [Download](https://www.dropbox.com/scl/fi/lva4mpgmg8bz8iwb6eg41/rocole-DatasetNinja.tar?rlkey=2tt7v6d4ijgyacm48tbfkvjac&dl=1)
+ [Download](https://assets.supervisely.com/remote/eyJsaW5rIjogImZzOi8vYXNzZXRzLzEzNTBfUm9Db0xlL3JvY29sZS1EYXRhc2V0TmluamEudGFyIiwgInNpZyI6ICJFNlBwdk9nQnQwcVZHakhjdUdKVTZHak0xZWFtMnZPMTV6S2JVTCt2WEhnPSJ9)
 
 As an alternative, it can be downloaded with *dataset-tools* package:
 ``` bash
